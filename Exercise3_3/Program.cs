@@ -10,6 +10,11 @@ namespace Exercise3_3
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите строку для ее перевода в обратном порядке: ");
+            string str = Console.ReadLine();
+
+            if (str != null)
+                Console.WriteLine(new string(str.Reverse().ToArray()));
         }
     }
 }
